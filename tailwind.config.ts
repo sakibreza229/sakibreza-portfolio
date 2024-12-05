@@ -9,9 +9,73 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: {
+          DEFAULT: '#6C6CFF',
+          light: '#A0A8FF',
+          dark: '#21184E',
+          hover: '#675BF9',
+        },
+        secondary: {
+          DEFAULT: '#F53B57',
+          light: '#FEA3AD',
+          dark: '#891235',
+        },
+        tertiary: {
+          DEFAULT: '#4C516D',
+          light: '#747d8c',
+          dark: '#303952',
+        },
+        typography: {
+          light: '#F0F8FF',
+          dark: '#0C2340',
+          title: '#000033',
+          muted: '#9AA5B1',
+        },
+        container: {
+          DEFAULT: '#F59E0B',
+          light: '#FBBF24',
+          dark: '#D97706',
+        },
+        background: {
+          light: '#E0E0FF',
+          dark: '#00001F',
+        },
       },
+      keyframes: {
+        blinking: {
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '0' },
+        },
+        sliding: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(0)' },
+        },
+        'fading-in': {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        'fading-out': {
+          '0%': { opacity: '1' },
+          '100%': { opacity: '0' },
+        },
+      },
+      animation: {
+        blink: 'blinking 1s ease-in-out infinite',
+        slide: 'sliding 0.5s ease-in-out',
+        'fade-in': 'fading-in 0.5s ease-in',
+        'fade-out': 'fading-out 0.5s ease-out',
+      }
+    },
+    fontFamily:{
+      primary: [`var(--font-poppins)`, `sans-serif`],
+      secondary: [`var(--font-ubuntu)`, `sans-serif`],
+    },
+    screens: {
+      xs: "378px",
+      sm: "576px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
     },
   },
   plugins: [],

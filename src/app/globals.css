@@ -2,20 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-background-light dark:bg-background-dark text-typography-dark dark:text-typography-light text-sm sm:text-base overflow-x-hidden;
+}
+
+::selection {
+  @apply bg-primary text-typography-light;
+}
+
+section {
+  @apply pt-12 pb-8;
+}
+
+.section-container {
+  @apply max-w-screen-xl mx-auto px-4 xl:px-20;
 }
