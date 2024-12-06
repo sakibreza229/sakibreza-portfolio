@@ -52,7 +52,7 @@ section {
 }
 
 .btn {
-  @apply px-6 py-2 relative inline-flex justify-center items-center gap-x-1 sm:gap-x-2 rounded-2xl text-base font-medium overflow-hidden hover:scale-105 active:scale-90 transition-all duration-300;
+  @apply px-6 py-2 relative inline-flex justify-center items-center gap-x-1 sm:gap-x-2 rounded-2xl text-base font-medium overflow-hidden hover:scale-105 active:scale-90 transition-transform ease-linear duration-300;
 }
 
 .btn-primary {
@@ -60,7 +60,7 @@ section {
 }
 
 .btn-secondary {
-  @apply border-2 border-primary bg-transparent z-[1] text-primary hover:text-typography-light before:content-[''] before:absolute before:top-0 before:-left-32 before:h-full hover:before:scale-125 before:w-full before:bg-primary before:-z-[1] hover:before:left-0 before:transition-all before:duration-200 active:scale-90 active:before:bg-primary-hover hover:bg-primary;
+  @apply border-2 border-primary bg-transparent z-[1] text-primary hover:text-typography-light before:content-[''] before:absolute before:top-0 before:-left-48 before:h-full hover:before:scale-125 before:w-full before:bg-primary before:-z-[1] hover:before:left-0 before:transition-all before:ease-linear before:duration-300 active:scale-90 active:before:bg-primary transition-colors hover:bg-primary-light duration-700 ease-linear;
 }
 
 .btn-arrow {

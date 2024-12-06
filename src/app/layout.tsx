@@ -17,7 +17,6 @@ export const metadata: Metadata = {
   title: "Sakib Reza - FullStack Developer | Portfolio Website",
   description:
     "I'm Sakib Reza, a passionate Full-Stack Web and App Developer. I specialize in crafting modern websites, feature-rich mobile apps, and robust desktop applications. Explore my portfolio to see how I transform ideas into innovative, high-performance digital solutions using the latest technologies.",
-  viewport: "width=device-width, initial-scale=1.0",
 };
 
 export default function RootLayout({
