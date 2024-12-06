@@ -1,7 +1,15 @@
+import Header from "@/components/Header/Header";
+
 export default function Home() {
   return (
-    <div className="text-xl">
-      Hello Sakib Reza!
-    </div>
+    <>
+      <Header />
+      <div id="home" className="h-screen bg-primary-dark">
+      home
+      </div>
+      <div id="about" className="h-screen">
+      about
+      </div>
+    </>
   );
 }

@@ -21,3 +21,20 @@ section {
 .section-container {
   @apply max-w-screen-xl mx-auto px-4 xl:px-20;
 }
+
+.scroll-header {
+  box-shadow: 0 1px 12px hsla(234, 5%, 15%, 0.15);
+  background-color: aliceblue;
+}
+
+.scroll-header .nav {
+  height: 3.5rem;
+  @apply text-typography-title;
+  .nav-logo a {
+    @apply text-primary-dark hover:text-primary-hover;
+  }
+}
+
+.nav {
+  height: 5rem;
+}
