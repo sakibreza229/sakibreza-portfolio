@@ -38,3 +38,35 @@ section {
 .nav {
   height: 5rem;
 }
+
+.active-link {
+  @apply text-primary;
+  transition: .3s;
+}
+
+.active-link::before {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  @apply w-2 h-1 rounded-l-full rounded-r-full md:hidden bg-primary; 
+}
+
+.btn {
+  @apply px-6 py-2 relative inline-flex justify-center items-center gap-x-1 sm:gap-x-2 rounded-2xl text-base font-medium overflow-hidden hover:scale-105 active:scale-90 transition-all duration-300;
+}
+
+.btn-primary {
+  @apply text-white rounded-2xl before:absolute before:inset-[-1000%] before:animate-[spin_2s_linear_infinite] before:bg-[conic-gradient(from_90deg_at_50%_50%,#3d3dff_0%,#6c6cff_50%,#8f8fff_100%)] before:-z-[2] after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:w-[calc(100%-4px)] after:h-[calc(100%-4px)] after:rounded-2xl after:bg-primary after:-z-[1] hover:after:bg-transparent after:transition-colors after:ease-in-out after:duration-300;
+}
+
+.btn-secondary {
+  @apply border-2 border-primary bg-transparent z-[1] text-primary hover:text-typography-light before:content-[''] before:absolute before:top-0 before:-left-32 before:h-full hover:before:scale-125 before:w-full before:bg-primary before:-z-[1] hover:before:left-0 before:transition-all before:duration-200 active:scale-90 active:before:bg-primary-hover hover:bg-primary;
+}
+
+.btn-arrow {
+  @apply inline-flex items-center justify-center gap-x-2 font-medium text-primary cursor-pointer hover:text-primary-hover;
+}
+
+.btn-arrow:hover .arrow {
+  @apply translate-x-1 transition-transform duration-200;
+}
