@@ -8,7 +8,7 @@ interface NavItemProps {
 
 const NavItem: React.FC<NavItemProps> = ({ sectionId, navName, navIcon }) => {
   return (
-    <li className="nav__item relative">
+    <div className="nav__item relative">
       <a
         href={sectionId}
         className="flex flex-col items-center gap-y-1 font-medium hover:text-primary"
@@ -16,7 +16,7 @@ const NavItem: React.FC<NavItemProps> = ({ sectionId, navName, navIcon }) => {
         <span className="text-xl lg:hidden">{navIcon}</span>
         <span className="hidden xs:block text-xs lg:text-base">{navName}</span>
       </a>
-    </li>
+    </div>
   );
 };
 

@@ -1,4 +1,6 @@
+"use client"
 import React from "react";
+import { Typewriter } from 'react-simple-typewriter'
 import Link from "next/link";
 import { IoChevronDownOutline } from "react-icons/io5";
 import {
@@ -16,7 +18,7 @@ const Hero = () => {
   return (
     <section
       id="#hero"
-      className="relative h-full w-full bg-[#2a213e] text-typography-light [clip-path:_polygon(0%_0%,_100%_0,_100%_94%,_50%_100%,_0_94%)]"
+      className="relative h-full w-full bg-[#1A1A2E] text-typography-light [clip-path:_polygon(0%_0%,_100%_0,_100%_94%,_50%_100%,_0_94%)]"
     >
       <div className="flex flex-col mt-16 sm:mt-24 md:flex-row items-center justify-center md:justify-between section-container">
         {/* <!-- ========== home blob start ========== --> */}
@@ -64,8 +66,8 @@ const Hero = () => {
           {/* <!-- home typing animated text --> */}
           <h3 className="mt-2 md:mt-6 font-medium text-xl md:text-3xl">
             I{`'`}m a{" "}
-            <span className="text-primaryColor font-secondary">
-              {/* <Typewriter
+            <span className="text-primary font-secondary">
+              <Typewriter
                 cursor
                 cursorBlinking
                 cursorColor="#fff"
@@ -80,7 +82,7 @@ const Hero = () => {
                   "Full-Stack Developer",
                   "Continuous Learner",
                 ]}
-              /> */}
+              />
             </span>
           </h3>
 
@@ -124,9 +126,11 @@ const Hero = () => {
       </div>
       {/* <!-- ========== scroll down indicator end ========== --> */}
 
-      <Image src={HeroBg} alt="" className="absolute top-0 left-0 -z-10" />
-      {/* <!-- animated square --> */}
+      {/* Animated Square */}
       <HeroBgAnimation />
+
+      {/* Hero Background Images */}
+      <Image src={HeroBg} alt="" className="absolute top-0 left-0 -z-10 hidden md:block" />
     </section>
   );
 };
