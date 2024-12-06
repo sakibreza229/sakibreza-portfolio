@@ -19,15 +19,15 @@ export const HeadingPrimary: React.FC<HeadingPrimaryProps> = ({
   context,
 }) => {
   return (
-    <div className="sm:flex justify-between items-end md:border-b-2 pt-8 md:pb-4 mb-6 md:mb-8 md:border-textColorLight">
+    <div className="sm:flex justify-between items-end md:border-b-2 pt-8 md:pb-4 mb-6 md:mb-8 md:border-primary-light">
       <div className="text-center sm:text-left mb-4 md:mb-0">
         <div className="flex justify-center sm:justify-normal items-center gap-x-4">
-          <span className="hidden sm:inline h-[2px] w-[60px] bg-secondaryColor"></span>
-          <h2 className="font-bold text-3xl md:font-medium text-titleColor md:text-primaryColor md:text-xl md:font-secondary capitalize">
+          <span className="hidden sm:inline h-[2px] w-[60px] bg-primary-light"></span>
+          <h2 className="font-bold text-3xl md:font-medium text-typography-title md:text-primary md:text-xl capitalize">
             {title}
           </h2>
         </div>
-        <p className="md:font-bold font-medium text-sm md:text-4xl text-primaryColor md:text-titleColor mt-1">
+        <p className="md:font-bold font-medium text-sm md:text-4xl text-primary md:text-typography-title md:font-secondary mt-1">
           {subtitle}
         </p>
       </div>

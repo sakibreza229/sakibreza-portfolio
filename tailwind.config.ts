@@ -16,14 +16,14 @@ export default {
           hover: "#675BF9",
         },
         secondary: {
-          DEFAULT: "#F53B57",
-          light: "#FEA3AD",
-          dark: "#891235",
-        },
-        tertiary: {
           DEFAULT: "#4C516D",
           light: "#747d8c",
           dark: "#303952",
+        },
+        tertiary: {
+          DEFAULT: "#F53B57",
+          light: "#FEA3AD",
+          dark: "#891235",
         },
         typography: {
           light: "#F0F8FF",
