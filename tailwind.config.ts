@@ -31,11 +31,6 @@ export default {
           title: "#000033",
           muted: "#9AA5B1",
         },
-        container: {
-          DEFAULT: "#F59E0B",
-          light: "#FBBF24",
-          dark: "#D97706",
-        },
         background: {
           light: "#E0E0FF",
           dark: "#00001F",

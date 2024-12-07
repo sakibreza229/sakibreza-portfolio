@@ -1,17 +1,20 @@
-"use client"
+"use client";
 import React from "react";
-import { Typewriter } from 'react-simple-typewriter'
+import { Typewriter } from "react-simple-typewriter";
+import { Tooltip } from "antd";
 import Link from "next/link";
 import { IoChevronDownOutline } from "react-icons/io5";
 import {
   FaLinkedinIn,
+  FaXTwitter,
   FaGithub,
   FaBehance,
+  FaDribbble,
   FaArrowUpFromBracket,
   FaArrowRightToBracket,
 } from "react-icons/fa6";
 import HeroBgAnimation from "./HeroBgAnimation";
-import HeroBg from "../../assets/images/hero.svg"
+import HeroBg from "../../assets/images/hero.svg";
 import Image from "next/image";
 
 const Hero = () => {
@@ -107,22 +110,40 @@ const Hero = () => {
       {/* home social */}
       <div className="flex xl:flex-col items-center gap-y-5 gap-x-3 justify-center md:justify-start w-full xl:w-min absolute bottom-20 left-0 md:left-2 lg:left-4 xl:bottom-36 xl:left-6 before:content-[''] before:absolute before:-bottom-24 before:left-[6px] before:h-14 before:w-[1px] before:bg-white before:hidden xl:before:block">
         <span className="text-sm xl:hidden">Checkout My: </span>
+        <Tooltip title="LinkedIn" placement="right" color={"#4C516D"}>
         <a href="#" className="hover:text-primary transition-colors">
           <FaLinkedinIn />
         </a>
+        </Tooltip>
+        <Tooltip title="X - Twitter" placement="right" color={"#4C516D"}>
+        <a href="#" className="hover:text-primary transition-colors">
+          <FaXTwitter />
+        </a>
+        </Tooltip>
+        <Tooltip title="GitHub" placement="right" color={"#4C516D"}>
         <a href="#" className="hover:text-primary transition-colors">
           <FaGithub />
         </a>
+        </Tooltip>
+        <Tooltip title="Behance" placement="right" color={"#4C516D"}>
         <a href="#" className="hover:text-primary transition-colors">
           <FaBehance />
         </a>
+        </Tooltip>
+        <Tooltip title="Dribbble" placement="right" color={"#4C516D"}>
+        <a href="#" className="hover:text-primary transition-colors">
+          <FaDribbble />
+        </a>
+        </Tooltip>
       </div>
 
       {/* <!-- ========== scroll down indicator start ========== --> */}
       <div className="w-full flex justify-center mt-12">
-        <Link href="#about" className="text-4xl animate-bounce">
-          <IoChevronDownOutline />
-        </Link>
+        <Tooltip title="Scroll Down" placement="top" color={"#4C516D"}>
+          <Link href="#about" className="text-4xl animate-bounce">
+            <IoChevronDownOutline />
+          </Link>
+        </Tooltip>
       </div>
       {/* <!-- ========== scroll down indicator end ========== --> */}
 
@@ -130,7 +151,11 @@ const Hero = () => {
       <HeroBgAnimation />
 
       {/* Hero Background Images */}
-      <Image src={HeroBg} alt="" className="absolute top-0 left-0 -z-10 hidden md:block" />
+      <Image
+        src={HeroBg}
+        alt=""
+        className="absolute top-0 left-0 -z-10 hidden md:block"
+      />
     </section>
   );
 };

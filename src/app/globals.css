@@ -52,11 +52,11 @@ section {
 }
 
 .btn {
-  @apply px-6 py-2 relative inline-flex justify-center items-center gap-x-1 sm:gap-x-2 rounded-2xl text-base font-medium overflow-hidden hover:scale-105 active:scale-90 transition-transform ease-linear duration-300;
+  @apply px-6 py-2 relative inline-flex justify-center items-center gap-x-1 sm:gap-x-2 rounded-2xl text-base font-medium overflow-hidden active:scale-90 transition-transform ease-linear duration-300;
 }
 
 .btn-primary {
-  @apply text-white rounded-2xl before:absolute before:inset-[-1000%] before:animate-[spin_2s_linear_infinite] before:bg-[conic-gradient(from_90deg_at_50%_50%,#3d3dff_0%,#6c6cff_50%,#8f8fff_100%)] before:-z-[2] after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:w-[calc(100%-4px)] after:h-[calc(100%-4px)] after:rounded-2xl after:bg-primary after:-z-[1] hover:after:bg-transparent after:transition-colors after:ease-in-out after:duration-300;
+  @apply border-2 border-primary text-white rounded-2xl before:absolute before:inset-[-1000%] before:animate-[spin_2s_linear_infinite] before:bg-[conic-gradient(from_90deg_at_50%_50%,#3d3dff_0%,#6c6cff_50%,#8f8fff_100%)] before:-z-[2] after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:w-[calc(100%-4px)] after:h-[calc(100%-4px)] after:rounded-2xl after:bg-primary after:-z-[1] hover:after:bg-transparent after:transition-colors after:ease-in-out after:duration-300;
 }
 
 .btn-secondary {
