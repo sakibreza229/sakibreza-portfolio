@@ -4,6 +4,7 @@ import About from "@/pages/About/About"
 import Skills from "@/pages/Skills/Skills"
 import Qualification from "@/pages/Qualification/Qualification";
 import Services from "@/pages/Services/Services";
+import Pricing from "@/pages/Pricing/Pricing";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Skills />
         <Qualification />
         <Services />
+        <Pricing />
       </main>
     </>
   );
